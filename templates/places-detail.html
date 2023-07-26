@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h1>Title: {{ place.title }}</h1>
+<p>Description: {{ place.body }}</p>
+<p>Author: {{ place.author }}</p>
+{% if place.pk %}
+<p class="button"><a href="{% url 'place_update' place.pk %}">Update Place</a></p>
+<p class="button"><a href="{% url 'place_delete' place.pk %}">Delete Place</a></p>
+{% else %}
+<p>Place does not have primary key</p>
+{% endif %}
+{% endblock content %}

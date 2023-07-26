@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h1>Title: {{ review.title }}</h1>
+<p>Author: {{ review.author }}</p>
+<p>Description: {{ review.body }}</p>
+{% if review.pk %}
+<p class="button"><a href="{% url 'review_update' review.pk %}">Update Review</a></p>
+<p class="button"><a href="{% url 'review_delete' review.pk %}">Delete Review</a></p>
+{% else %}
+<p>Reviews of the World</p>
+{% endif %}
+{% endblock content %}

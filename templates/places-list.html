@@ -1,0 +1,8 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h1>Want to Go App</h1>
+{% for place in place_list %}
+<p><a href="{% url 'place_detail' place.pk %}">{{ place.title }}</a></p>
+{% endfor %}
+{% endblock content %}
