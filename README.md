@@ -1,3 +1,13 @@
+# lab class 28
+
+an app with full crud that lets you add places you want to go and review them
+
+
+
+
+
+
+
 > A batteries-included Django starter project. To learn more try the books [Django for Beginners](https://djangoforbeginners.com), [Django for APIs](https://djangoforapis.com), and [Django for Professionals](https://djangoforprofessionals.com).
 
 
